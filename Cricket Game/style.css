@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  text-align: center;
+  background-color: var(--bg-color);
+  box-shadow: inset 0px 0px 1rem 0px var(--main-color);
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 25px;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #ffffff;
+  --main-color: #0ef;
+}
+
+h1 {
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+h1 span {
+  color: var(--main-color);
+}
+
+.choice-button {
+  height: 140px;
+  width: 140px;
+  border: none;
+  margin: 10px;
+  background-color: var(--second-bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 1rem 0px var(--main-color);
+}
+
+.choice-button img {
+  transition: transform 0.5s ease;
+}
+
+.choice-button img:hover {
+  transform: scale(1.1);
+}
+
+.choice-image {
+  height: 75px;
+}
+
+.output {
+  margin: 15px;
+}
+
+.output h3 {
+  padding: 8px;
+  color: var(--text-color);
+}
+
+.reset-btn {
+  padding: 5px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  border: none;
+  box-shadow: 0 0 1rem var(--main-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.reset-btn:hover {
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+    padding-top: 22px;
+    padding-bottom: 12px;
+  }
+  .output h3 {
+    font-size: 14px;
+  }
+  .reset-btn {
+    font-size: 20px;
+  }
+  .choice-image {
+    height: 65px;
+  }
+  .choice-button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .reset-btn {
+    font-size: 18px;
+  }
+  
+}
